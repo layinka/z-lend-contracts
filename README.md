@@ -5,17 +5,14 @@ DeFi Lending platform which lets you lend, borrow crypto assets and helps you ea
 Depositors are rewarded with zLend tokens for depositing into the Lending Pool. Depositors will also be able to share from the interest made on the platforms from loans.
 
 ### Screenshot
-![Home](https://github.com/layinka/zLend/assets/629572/685ce6ce-ac1b-4174-bc37-f95e230e700e)
+![Home](https://cdn.dorahacks.io/static/files/190c60299d9a470200aa3d042c09318a.png)
 
 
 ### Demo Video
-[Youtube Demo ](https://youtu.be/Uh21wv3zVeQ)
+[Youtube Demo ](https://youtu.be/7kLVlTcrrO4)
 
 ## Networks supported
-zLend aims to be multichain. Current networks supported are
-
-- Etherlink testnet
-- Shardeum Sphinx Testnet
+zLend is currently on the DChain Testnet
 
 
 # Features
@@ -49,4 +46,4 @@ ng serve
 
 
 ## Deposits
-![Deposit](https://github.com/layinka/zLend/assets/629572/12ae0a8e-fd9c-444a-8292-f81785d44e1f)
+![Deposit](https://cdn.dorahacks.io/static/files/190c60346559795ab72656b4f58a0e43.png)
