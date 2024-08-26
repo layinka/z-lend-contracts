@@ -9,7 +9,7 @@ Depositors are rewarded with zLend tokens for depositing into the Lending Pool. 
 
 
 ### Demo Video
-[Youtube Demo ](https://youtu.be/7kLVlTcrrO4)
+[Youtube Demo ]( https://youtu.be/4fSmEWCdG8o)
 
 ## Networks supported
 zLend is currently on the EduChain (OpenCampus) Testnet
