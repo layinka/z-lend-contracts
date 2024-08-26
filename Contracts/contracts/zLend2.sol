@@ -13,6 +13,7 @@ interface IExtendedERC20 is IERC20 {
 } 
 
 error NotEnoughBalance();
+error NoDebt();
 
 contract zLend2 is Ownable, ReentrancyGuard, MainDemoConsumerBase  {
     using LendingHelper for address;

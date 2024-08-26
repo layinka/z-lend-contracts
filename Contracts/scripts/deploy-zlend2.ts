@@ -35,11 +35,16 @@ async function main() {
   const [owner] = await ethers.getSigners();
 
   // const mockV3Aggregator = await (await MockV3AggregatorArtifact.deploy()).deployed();
+  let zLendToken;
+  if(chainId==656476){
+    
+    zLendToken = await zLendTokenArtifact.attach('0x0E47F34c174322d983F81F537097b15c3f299cE8');
+  }else{
+    zLendToken = await zLendTokenArtifact.deploy('ZLend', 'ZLD');
+    await zLendToken.deployed();
+    console.log('zLendToken Deployed at  ', zLendToken.address );
+  }
   
-  
-  const zLendToken = await zLendTokenArtifact.deploy('ZLend', 'ZLD');
-  await zLendToken.deployed();
-  console.log('zLendToken Deployed at  ', zLendToken.address );
 
   const tokens=[]
 //   const tokens = [
@@ -54,7 +59,8 @@ async function main() {
     const e = tokenDetails[chainId][index]
     let t;
 
-    if(e.useAddressInList){
+    if(e.useAddressInList===true){
+      console.log('using list for ', e.name )
       if(e.wrapped){
         t = wethArtifact.attach(e.address).connect(owner);          
         //deposit in wrapped token contract 
@@ -66,6 +72,7 @@ async function main() {
         t = tokenArtifact.attach(e.address).connect(owner)
       }
     }else{
+      console.log('Not using list for ', e.name )
       if(e.wrapped){
         t = await wethArtifact.deploy(e.name, e.name);
         await t.deployed();  

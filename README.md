@@ -1,6 +1,6 @@
 # ZLend 
 ## DeFi Peer to Peer Lending DApp
-DeFi Lending platform which lets you lend, borrow crypto assets and helps you earn some passive income as interest on your deposits.
+zLend is a decentralized lending protocol designed to empower educators, students, and institutions within the education ecosystem. Whether you're looking to earn passive income on your crypto assets or secure funding for educational purposes, zLend offers a flexible and innovative solution tailored for the education sector.
 
 Depositors are rewarded with zLend tokens for depositing into the Lending Pool. Depositors will also be able to share from the interest made on the platforms from loans.
 
@@ -12,7 +12,7 @@ Depositors are rewarded with zLend tokens for depositing into the Lending Pool. 
 [Youtube Demo ](https://youtu.be/7kLVlTcrrO4)
 
 ## Networks supported
-zLend is currently on the DChain Testnet
+zLend is currently on the EduChain (OpenCampus) Testnet
 
 
 # Features

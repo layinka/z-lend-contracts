@@ -5,6 +5,7 @@ import "./LendingHelper.sol";
 import "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
 import "hardhat/console.sol";
 
+error NoDebt();
 contract zLend is Ownable, ReentrancyGuard {
     using LendingHelper for address;
     using SafeERC20 for IERC20;
